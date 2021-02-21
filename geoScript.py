@@ -43,7 +43,7 @@ for i,_ in enumerate(df.index):
 latList, lonList = [], []
 
 for city in slist:
-    latitude, longitude = geoGoogle(city, api_key)[0], geoGoogle(city, api_key)[1]
+    latitude, longitude = geoGoogle(city, api_key)
     # print("Latitude and Longitude of {} is ".format(city), latitude, " ", longitude)
     latList.append(latitude)
     lonList.append(longitude)
